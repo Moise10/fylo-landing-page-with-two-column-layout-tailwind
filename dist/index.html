@@ -5,108 +5,123 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="output.css">
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   
 </head>
 <body>
-  <section class="">
-    <header class="">
+  <section class="p-8">
+    <header class="flex justify-between">
       <div class="">
-        <img src="./images/logo.svg" alt="" class="">
+        <img src="./images/logo.svg" alt="" class="sm:h-4">
       </div>
       <nav class="">
-        <ul class="">
-          <li class="">
+        <ul class="flex gap-4">
+          <li class="text-sm">
             <a href="" class="">Features</a>
           </li>
-          <li class="">
+          <li class="text-sm">
             <a href="" class="">Team</a>
           </li>
-          <li class="">
+          <li class="text-sm">
             <a href="" class="">Sign In</a>
           </li>
         </ul>
       </nav>
     </header>
-    <div class="">
-      <div class="">
-        <h1 class="">All your files in one secure location, accessible anywhere.</h1>
-        <p class="">Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
-        <form action="" class="">
-          <input type="text" placeholder="Enter your email">
-          <button class="">Get Started</button>
-        </form>
+    <div class="lg:grid lg:grid-cols-2">
+      <div class="lg:order-2">
+        <img src="./images/illustration-1.svg" alt="" class="sm:h-22">
       </div>
       <div class="">
-        <img src="./images/illustration-1.svg" alt="" class="">
+        <h1 class="font-bold text-2xl text-center py-8 sm:text-3xl">All your files in one secure location, accessible anywhere.</h1>
+        <p class="pb-8 px-4 text-justify sm:text-2xl ">Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
+        <form action="" class="sm:px-14 xl:flex">
+          <input type="text" placeholder="Enter your email" class="sm:w-full sm:py-4 border-solid border-2 py-2 mb-4">
+          <button class="sm:w-full bg-blue-500 text-white py-2 sm:py-4">Get Started</button>
+        </form>
       </div>
     </div>
   </section>
 
-  <section class="">
+  <section class="p-8 bg-[url('./images/bg-curve-mobile.svg')] shadow-3xl  bg-cover bg-center lg:grid lg:grid-cols-2">
+    
+    <div class="pb-36 lg:order-2">
+      <img src="./images/illustration-2.svg" alt="" class="">
+      
+    </div>
     <div class="">
-      <h1 class="">Stay productive, wherever you are</h1>
-      <p class="">Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
-      <p class="">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
-      <a href="#" class="">See how Fylo works</a>
-      <div class="">
-        <p class="">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
-        <div class="">
-          <img src="./images/avatar-testimonial.jpg" alt="" class="">
-          <span class="">Kyle Burton</span>
-          <span class="">Founder & CEO, Huddle</span>
+      <h1 class="text-center pb-6 font-bold text-lg sm:text-3xl">Stay productive, wherever you are</h1>
+      <p class="text-black opacity-50 pb-6 sm:text-2xl">Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
+      <p class="text-black opacity-50  sm:text-2xl pb-8">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
+      <div class="block underline gap-2 pb-2">
+        <a href="#" class="text-[#3C9F8F] text-center">See how Fylo works</a>
+        <img src="./images/icon-arrow.svg" alt="" class="">
+      </div>
+      
+      <div class="bg-white p-4 sm:p-10 text-sm opacity-70 pt-10 relative">
+        <img src="./images/icon-quotes.svg" alt="" class="absolute h-2  top-6">
+        <p class="pb-4 sm:text-xl ">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+        <div class="flex items-center gap-2 sm:gap-4">
+          <img src="./images/avatar-testimonial.jpg" alt="" class="rounded-full h-8 sm:h-12 ">
+          <div class="flex flex-col text-sm">
+            <span class="font-bold sm:text-xl">Kyle Burton</span>
+            <span class="opacity-50 text-sm sm:text-lg">Founder & CEO, Huddle</span>
+          </div>
+          
         </div>
       </div>
     </div>
-    <div class="">
-      <img src="./images/illustration-2.svg" alt="" class="">
-    </div>
+    
   </section>
 
-  <section class="">
-    <div class="">
-      <h2 class="">Get early access today</h2>
-      <p class="">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+  <section class="p-8 bg-[#585989] lg:grid lg:grid-cols-2">
+    <div class="text-center text-white lg:text-left">
+      <h2 class="py-4 text-xl sm:text-3xl">Get early access today</h2>
+      <p class="opacity-60 sm:text-2xl">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
     </div>
-    <div class="">
-      <form action="#" class="">
-        <input type="text" class="" placeholder="email@example.com">
-        <button class="">Get Started For Free</button>
+    <div class="pt-6 ">
+      <form action="#" class="flex items-center justify-center flex-col px-[2rem]">
+        <input type="text" class="w-full py-2 sm:py-4 mb-2 lg:mb-6" placeholder="email@example.com">
+        <button class="bg-blue-600 py-2 w-full text-[#F6F6FE] text-sm sm:text-xl sm:py-4">Get Started For Free</button>
       </form>
     </div>
   </section>
 
-  <footer class="">
+  <footer class="p-8 h-auto bg-[#070439] sm:text-3xl xl:text-xl xl:grid xl:grid-cols-4 xl:items-center xl:gap-28">
     <div class="">
-      <div class="">
-        <img src="./images/logo.svg" alt="" class="">
+      <div class="pb-10 pt-8">
+        <img src="./images/logo.svg" alt="" class="fill-current">
       </div>
-      <div class="">
+      <div class="flex items-center gap-6 pb-6 ">
         <img src="./images/icon-phone.svg" alt="" class="">
-        <span class="">Phone: +1-543-123-4567</span>
+        <span class="text-white opacity-70">Phone: +1-543-123-4567</span>
       </div>
-      <div class="">
+      <div class="flex items-center gap-6 pb-20">
         <img src="./images/icon-email.svg" alt="" class="">
-        <span class="">example@fylo.com</span>
+        <span class="text-white opacity-70">example@fylo.com</span>
       </div>
     </div>
-    <div class="">
+    <div class="text-white flex flex-col opacity-60 gap-4 pb-14">
       <span class="">About Us</span>
       <span class="">Jobs</span>
       <span class="">Press</span>
       <span class="">Blog</span>
     </div>
-    <div class="">
+    <div class="text-white flex flex-col opacity-60 gap-4 pb-14">
       <span class="">Contact Us</span>
       <span class="">Terms</span>
       <span class="">Privacy</span>
     </div>
-    <div class="">
-      <a href="" class=""><ion-icon name="logo-facebook"></ion-icon></a>
-      <a href="" class=""><ion-icon name="logo-twitter"></ion-icon></a>
-      <a href="" class=""><ion-icon name="logo-instagram"></ion-icon></a>
+    <div class="flex text-white items-center justify-center gap-6">
+      <a href="" ><ion-icon class="p-2 rounded-full border-2 border-solid border-white opacity-60" name="logo-facebook"></ion-icon></a>
+      <a href="" class=""><ion-icon class="p-2 rounded-full border-2 border-solid opacity-60 border-white"name="logo-twitter"></ion-icon></a>
+      <a href="" class=""><ion-icon class="p-2 rounded-full border-2 border-solid opacity-60 border-white"name="logo-instagram"></ion-icon></a>
     </div>
   </footer>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
